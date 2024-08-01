@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="result.html">         <!-- 전과 같이 요청을 해준다 . -->
+            <fieldset>
+                <legend>이름 입력하기 </legend>
+                <div>
+                    <label for="user_name">이름</label>
+                    <input type="text" name="user_name" id="user_name">
+                </div> 
+                <br>
+                <div>       <!--action과 세트이다. -->
+                    <input type="submit" value="입력완료">
+                    <input type="reset" value="초기화">
+                    <input type="button" onclick="javascrupt:location.href='result.html'"value= "입력완료">
+                    <input type="image"src="./image/ok.png" width="30"height = "30" alt=" ok">
+                    <!--  자동 submit-->
+                    <input type="image"src="./image/ok.png" width="30"height = "30" alt=" ok"
+                    onclick= "return false;"/>
+                </div>
+            </fieldset>
+    </form>
+    
+</body>
+</html>
+<!-- input 타입의 경우에는 뭐를 타고 갈수 있다 . img -->
+<!--
+    -form 태그 안에 있는 입려강자의 데이터를 들고 페이지 이동
+    button ~onclick 
+    input type = "button"
+    <button />
+
+    이미지 
+    <img src =""alt="" 자동 서브밋을 해주지 안ㄹ는다.  단순 이미지
+    input type="image"src ==    자동 서브밋을 해준다 . 데이터르 갖고 이동을 해준다. 
+-->

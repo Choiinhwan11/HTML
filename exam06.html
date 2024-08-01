@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+
+            <legend>
+
+                <div><!--드롭 다운 (싱글타입)-->
+                    <label for=" telecom">이동통신사 선택</label>
+                    <select name="telecom" id="telecom"></select><br><br>
+                    <option value="skt"> SKtelecom</option>
+                    <option value="KT">KT</option>
+                    <option value="LG">LG</option>
+                </div>
+            </legend>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>스마트폰 운영체제 선택</legend>
+            <div><!--드롭 다운 (멀티타입) 몇개로 해줍니다 . 하면 멀티 타입으로 해준다 . multiple size="5-->
+                <label for="smartphon">스마트폰 운영체제</label>
+                <select name="smartphon" id="smartphon">
+                <option value="기타">기타</option>   
+                <option value="android"seleted="seleted">안드로이드</option>
+                <option value="ios">ios</option>
+                <option value="widow">window</option>
+            </select>
+            </div>
+        </fieldset>
+    
+    
+    </form>
+</body>
+</html>

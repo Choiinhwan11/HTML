@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 홈페이지</title>
+    <style>
+        /* 여기에 CSS 스타일을 추가하세요 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .header-button {
+            width: 20%;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 100%;
+        }
+        .header-button:hover .sub-menu {
+            display: block;
+        }
+        .sub-menu a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .sub-menu a:hover {
+            background-color: #ddd;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .login-form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>나의 홈페이지</h1>
+        <div class="header-button">홈
+            <div class="sub-menu">
+                <a href="#">서비스1</a>
+                <a href="#">서비스2</a>
+                <a href="#">서비스3</a>
+            </div>
+        </div>
+        <div class="header-button">서비스
+            <div class="sub-menu">
+                <a href="#">서비스1</a>
+                <a href="#">서비스2</a>
+                <a href="#">서비스3</a>
+            </div>
+        </div>
+        <div class="header-button">등
+            <div class="sub-menu">
+                <a href="#">등1</a>
+                <a href="#">등2</a>
+                <a href="#">등3</a>
+            </div>
+        </div>
+        <div class="header-button">확인하세요
+            <div class="sub-menu">
+                <a href="#">등1</a>
+                <a href="#">등2</a>
+                <a href="#">등3</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <div class="content">
+            <h2>여기에 내용을 추가하세요</h2>
+            <p>이 부분에 홈페이지의 내용을 추가하세요.</p>
+        </div>
+        <div class="login-form">
+            <h2>로그인</h2>
+            <form>
+                <label for="username">사용자명:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">비밀번호:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">아이디 저장</label><br><br>
+                <a href="#">아이디 찾기</a> / <a href="#">비밀번호 찾기</a><br><br>
+                <input type="submit" value="로그인">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 나의 홈페이지</p>
+        <p>협찬</p>
+    </footer>
+</body>
+</html>
+
+
